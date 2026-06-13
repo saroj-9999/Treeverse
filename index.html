@@ -1,1 +1,50 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TreeVerse 🌳</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- TOP HUD (Game Info Bar) -->
+  <div class="hud">
+    <h1>🌳 TREEVERSE</h1>
+
+    <div class="stats">
+      <div>🌞 Light: <span id="ldrValue">0</span></div>
+      <div>🌿 Health: <span id="health">100%</span></div>
+      <div>⚡ Energy: <span id="energy">100</span></div>
+      <div>🏆 Leaves: <span id="leaves">0</span></div>
+    </div>
+  </div>
+
+  <!-- MAIN GAME AREA -->
+  <div class="game-area">
+
+    <!-- SKY EFFECT -->
+    <div id="sky"></div>
+
+    <!-- TREE -->
+    <div class="tree-container">
+      <img id="tree" src="https://cdn-icons-png.flaticon.com/512/427/427735.png" />
+    </div>
+
+    <!-- STATUS MESSAGE -->
+    <div id="message">
+      🌱 Keep your tree alive!
+    </div>
+
+  </div>
+
+  <!-- CONTROL PANEL -->
+  <div class="controls">
+    <button onclick="protectTree()">💡 Protect Tree (Turn LED)</button>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
